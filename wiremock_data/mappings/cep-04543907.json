@@ -1,0 +1,28 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/ws/04543907/json"
+  },
+
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "cep": "04543-907",
+      "logradouro": "Avenida Presidente Juscelino Kubitschek",
+      "complemento": "1909",
+      "unidade": "São Paulo Corporate Towers",
+      "bairro": "Vila Nova Conceição",
+      "localidade": "São Paulo",
+      "uf": "SP",
+      "estado": "São Paulo",
+      "regiao": "Sudeste",
+      "ibge": "3550308",
+      "gia": "1004",
+      "ddd": "11",
+      "siafi": "7107"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

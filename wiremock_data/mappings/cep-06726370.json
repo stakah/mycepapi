@@ -1,0 +1,28 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/ws/06726370/json"
+  },
+
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "cep": "06726-370",
+      "logradouro": "Rua Jari",
+      "complemento": "",
+      "unidade": "",
+      "bairro": "Jardim Ana Cristina (Caucaia do Alto)",
+      "localidade": "Cotia",
+      "uf": "SP",
+      "estado": "São Paulo",
+      "regiao": "Sudeste",
+      "ibge": "3513009",
+      "gia": "2781",
+      "ddd": "11",
+      "siafi": "6361"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}
