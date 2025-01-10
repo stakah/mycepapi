@@ -2,10 +2,8 @@ package com.mycepapi.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import javax.persistence.Id;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
+import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.time.LocalDateTime;
 
 @Entity
@@ -16,6 +14,14 @@ public class CepLog {
     private Long id;
 
     private LocalDateTime timestamp;
+    @Column(name="created_by")
+    @NotNull
+    private String createdBy;
+    private String clazz;
+
+    private String level;
+    private String message;
+
     private String cep; //: "06726-370",
     private String logradouro; //": "Rua Jari",
     private String complemento; //": "",
@@ -32,8 +38,12 @@ public class CepLog {
 
     public CepLog() {}
 
-    public CepLog(LocalDateTime timestamp, CepInfo response) {
+    public CepLog(LocalDateTime timestamp, String createdBy, String clazz, String level, String message, CepInfo response) {
         this.timestamp = timestamp;
+        this.createdBy = createdBy;
+        this.clazz = clazz;
+        this.level = level;
+        this.message = message;
         this.cep = response.cep;
         this.logradouro = response.logradouro;
         this.complemento = response.complemento;

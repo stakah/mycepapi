@@ -4,6 +4,14 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class CepInfo {
 
+    public CepInfo(String cep) {
+        this.cep = cep;
+    }
+
+
+    public CepInfo() {
+    }
+
     @JsonProperty
     String cep; //: "06726-370",
     @JsonProperty

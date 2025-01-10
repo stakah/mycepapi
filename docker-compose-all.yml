@@ -5,7 +5,7 @@ services:
 
   db:
     image: postgres
-    container_name: cep_pgdb
+    container_name: db
     restart: always
     # set shared memory limit when using docker-compose
     shm_size: 128mb
@@ -49,6 +49,19 @@ services:
       - ./wiremock_data/extensions:/var/wiremock/extensions
       - ./wiremock_data/__files:/home/wiremock/__files
       - ./wiremock_data/mappings:/home/wiremock/mappings
+    networks:
+      - back-tier
+
+  mycepapi:
+    image: mycepapi
+    build:
+      dockerfile: ./Dockerfile
+      no_cache: true
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+      - wiremock
     networks:
       - back-tier
 
