@@ -16,9 +16,9 @@ services:
     #    tmpfs:
     #      size: 134217728 # 128*2^20 bytes = 128Mb
     environment:
-      POSTGRES_DB: mycepdb
-      POSTGRES_USER: myuser
-      POSTGRES_PASSWORD: mypassword
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     ports:
       - "5432:5432"
     volumes:
@@ -30,8 +30,8 @@ services:
     image: 'docker.io/dpage/pgadmin4:latest'
     container_name: pgadmin4_container
     environment:
-      PGADMIN_DEFAULT_EMAIL: "pgadmin@email.com"
-      PGADMIN_DEFAULT_PASSWORD: "pgadmin"
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD}
     ports:
       - "8088:80"
     volumes:
