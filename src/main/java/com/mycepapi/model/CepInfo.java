@@ -12,6 +12,25 @@ public class CepInfo {
     public CepInfo() {
     }
 
+    @Override
+    public String toString() {
+        return "CepInfo{" +
+                "cep='" + cep + '\'' +
+                ", logradouro='" + logradouro + '\'' +
+                ", complemento='" + complemento + '\'' +
+                ", unidade='" + unidade + '\'' +
+                ", bairro='" + bairro + '\'' +
+                ", localidade='" + localidade + '\'' +
+                ", uf='" + uf + '\'' +
+                ", estado='" + estado + '\'' +
+                ", regiao='" + regiao + '\'' +
+                ", ibge='" + ibge + '\'' +
+                ", gia=" + gia +
+                ", ddd=" + ddd +
+                ", siafi=" + siafi +
+                '}';
+    }
+
     @JsonProperty
     String cep; //: "06726-370",
     @JsonProperty
