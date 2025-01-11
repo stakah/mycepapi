@@ -4,4 +4,4 @@ COPY .env .
 WORKDIR .
 
 
-CMD ["java", "-Dspring.profiles.active=docker", "-jar", "mycepapi-1.0-SNAPSHOT.jar" ]
+CMD ["java", "-jar", "mycepapi-1.0-SNAPSHOT.jar" ]

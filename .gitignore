@@ -4,6 +4,7 @@ target/
 !**/src/test/**/target/
 cep_pgdb_data/
 pgadmin-data/
+docs/**.~lock*
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
