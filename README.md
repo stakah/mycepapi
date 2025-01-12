@@ -117,13 +117,6 @@ utilize o script `run-dev-docker-compose.bat`
 run-dev-docker-compose.bat
 ```
 
-Para executar todos os containers e a aplicação MyCEPApi como um
-container docker, utilize o script `run-all-docker-compose.bat`
-
-```bash
-run-all-docker-compose.bat
-```
-
 ### Parando os containers do Docker Compose:
 
 Para parar os containers do PostgreSQL, do WireMock e do PgAdmin,
@@ -133,12 +126,23 @@ utilise o script `stop-dev-docker-compose.bat`
 stop-dev-docker-compose.bat
 ```
 
+[![asciicast](https://asciinema.org/a/bDRx5WypjuQQOcQ8s39ddUCmL.svg)](https://asciinema.org/a/bDRx5WypjuQQOcQ8s39ddUCmL)
+
+Para executar todos os containers e a aplicação MyCEPApi como um
+container docker, utilize o script `run-all-docker-compose.bat`
+
+```bash
+run-all-docker-compose.bat
+```
+
 Para parar todos os containers, incluindo o container da aplicação
 MyCEPAPI, utilize o script `stop-all-docker-compose.bat`
 
 ```bash
 stop-all-docker-compose.bat
 ```
+
+[![asciicast](https://asciinema.org/a/g5xQAGXAd3cK5CAcIi8apDgyG.svg)](https://asciinema.org/a/g5xQAGXAd3cK5CAcIi8apDgyG)
 
 ### Build do projeto
 
@@ -254,7 +258,7 @@ Acesse o PgAdmin pelo endereço `http://localhost:8088`.
 
 ![PgAdmin](./imgs/image012.png)
 
-No primeiro acesso, será preciso criar uma nova conexão do o servidor
+No primeiro acesso, será preciso criar uma nova conexão do servidor
 do PostreSQL.
 
 Pelo 'Dashboard', selecione 'Add New Server'.
