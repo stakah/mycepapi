@@ -45,10 +45,27 @@ public class CepController {
     }
 
 
+    public static class Error {
+        private String message;
+
+        public Error(String message) {
+            this.message = message;
+        }
+
+        public String getMessage() {
+            return message;
+        }
+
+        public void setMessage(String message) {
+            this.message = message;
+        }
+    }
+
     // Controller specific exception handler, not central like @ControllerAdvice
     @ExceptionHandler(ItemNotExistException.class)
     @ResponseStatus(HttpStatus.NOT_FOUND)
-    public String itemNotExistExceptionHandler(ItemNotExistException ex) {
-        return ex.getMessage(); // example
+    @ResponseBody
+    public Error itemNotExistExceptionHandler(ItemNotExistException ex) {
+        return new Error(ex.getMessage()); // example
     }
 }
