@@ -326,3 +326,10 @@ no botão 'Execute'.
 Os dados retornados serão apresentados no Response Body como um JSON.
 
 ![SwaggerUI](./imgs/image019.png)
+
+## Aplicação Web
+
+Para testar, é possível utilizar uma aplicação Web simples encontrado nesse projeto do Github:
+[https://github.com/stakah/mycep-web]()
+
+![MyCEP Web](./imgs/image020.png)
