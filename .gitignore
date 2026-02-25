@@ -3,6 +3,7 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 cep_pgdb_data/
+cep_pgdb/
 pgadmin-data/
 docs/**.~lock*
 
